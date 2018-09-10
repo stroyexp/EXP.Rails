@@ -1,0 +1,7 @@
+- cache @model do
+  .c-content__container
+    - unless @model.content.blank?
+      == @model.content.squish
+
+    - unless @model.partial.blank?
+      = render partial: "publishes/partials/#{@model.partial}"

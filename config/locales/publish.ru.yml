@@ -1,0 +1,23 @@
+ru:
+  publish:
+    index:
+      label: "Публикации"
+      title: "Публикации"
+      description: "Публикации АО Научно-исследовательский центр «Строительная экспертиза»"
+      header: "Публикации <small>АО НИЦ «Строительная экспертиза»</small>"
+
+  activerecord:
+    attributes:
+      publish:
+        published: "Опубликовано"
+        published_at: "Дата публикации"
+        header: "Заголовок"
+        content: "Содержимое"
+        partial: "Шаблон"
+        created_at: "Создано"
+        updated_at: "Изменено"
+    models:
+      publish: "Публикация"
+
+  active_admin:
+    publishes: "Публикации"

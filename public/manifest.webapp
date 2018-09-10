@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "name": "Construction Expertise",
+  "launch_path": "/",
+  "description": "JSC SIC «Construction Expertise» site.",
+  "icons": {
+    "96": "/images/touch/android-chrome-96x96.png",
+    "144": "/images/touch/android-chrome-144x144.png",
+    "192": "/images/touch/android-chrome-192x192.png",
+  },
+  "developer": {
+    "name": "fref",
+    "url": "http://fref.ru"
+  },
+  "installs_allowed_from": [
+    "*"
+  ],
+  "default_locale": "ru",
+  "permissions": {
+  },
+  "locales": {
+    "ru": {
+      "name": "Строительная Экспертиза",
+      "description": "Сайт АО НИЦ «Строительная экспертиза»."
+    }
+  }
+}

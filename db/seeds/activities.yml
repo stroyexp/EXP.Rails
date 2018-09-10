@@ -1,0 +1,40 @@
+-
+  :header: "Обследование зданий и сооружений"
+  :index: 0
+-
+  :header: "Технический надзор"
+  :index: 1
+-
+  :header: "Лабораторный контроль"
+  :index: 2
+-
+  :header: "Геодезия и мониторинг"
+  :index: 3
+-
+  :header: "Судебная экспертиза"
+  :index: 4
+-
+  :header: "Энергоэффективность и воздухопроницаемость"
+  :index: 5
+-
+  :header: "Сертификация и аккредитация"
+  :index: 6
+-
+  :header: "Электропрогрев"
+  :parent_id: 3
+  :index: 0
+-
+  :header: "Натурные испытания"
+  :parent_id: 3
+  :index: 1
+-
+  :header: "Ферроскан Hilti PS - 200 S"
+  :parent_id: 3
+  :index: 2
+  :navigated: false
+-
+  :header: "Мобильная испытательная лаборатория"
+  :parent_id: 3
+  :index: 3
+  :navigated: false
+...

@@ -1,0 +1,22 @@
+- cache item do
+  - path = object_path item
+  %dataset.c-catalog__row[
+    itemscope=true
+    itemtype='http://schema.org/Dataset'
+    ]
+    .c-catalog__image.h-layout--hide-tablet-phone
+      a%mainEntityOfPage.c-img--thumbnail[href=path]
+        .c-banner
+          canvas.c-banner__frame.h-bg--cover[
+            width=192
+            height=192
+            data-lazy=(item.cover.nil? ? image_url('no-image.png') : item.cover.thumb.url)
+            ]
+          - unless item.cover.nil?
+            link%thumbnailUrl[href=item.cover.thumb.url]
+            link%image[href=item.cover.url]
+
+    .c-catalog__text
+      h3%name.mdl-typography--headline
+        a%url[href=path] = item.name
+      .mdl-typography--subhead = item.areas_show '<br>'

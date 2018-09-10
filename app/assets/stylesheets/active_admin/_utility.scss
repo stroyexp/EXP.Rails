@@ -1,0 +1,43 @@
+@for $i from 1 through 9 {
+  .h-size--#{$i * 10} {
+    width: percentage($i / 10) !important;
+  }
+}
+
+.h-size--icon {
+  width: 6.5rem !important;
+}
+
+.h-size--integer {
+  width: 4rem !important;
+}
+
+.h-size--boolean {
+  width: 5rem !important;
+}
+
+.h-size--datetime {
+  width: 7rem !important;
+}
+
+.h-size--date {
+  width: 6rem !important;
+}
+
+.h-font--max {
+  font-size: 110%;
+}
+
+.h-font--min {
+  font-size: 90%;
+}
+
+.с-text--readable {
+  overflow-y: auto;
+  max-height: 10rem;
+  padding: .75rem 1rem;
+  background-color: rgba(255, 255, 255, .7);
+  border: $border-width solid rgba(255, 255, 255, .9);
+  border-radius: $border-radius;
+  cursor: default;
+}

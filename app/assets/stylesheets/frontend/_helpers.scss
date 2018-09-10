@@ -1,0 +1,30 @@
+.mdl-js {
+  .h-js--onclick {
+    cursor: pointer;
+  }
+}
+
+.h-js-preload {
+  background-color: unquote("rgba(#{$color-white}, .5)");
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    top: 50%;
+    width: 64px;
+    height: 64px;
+    margin-left: -32px;
+    margin-top: -32px;
+    background: image_url('loader/sector.128.gif') center no-repeat transparent;
+    background-size: cover;
+  }
+
+  &.is-error {
+    &::after {
+      background-image: image_url('system/error.png');
+    }
+  }
+}

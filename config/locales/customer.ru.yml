@@ -1,0 +1,32 @@
+ru:
+  customer:
+    index:
+      label: "Партнёры"
+      title: "Партнёры"
+      description: "Партнёры АО Научно-исследовательский центр «Строительная экспертиза»"
+      header: "Партнёры <small>АО НИЦ «Строительная экспертиза»</small>"
+
+  activerecord:
+    attributes:
+      customer:
+        published: "Опубликовано"
+        active: "Активно"
+        name: "Название"
+        content: "Описание"
+        phone: "Телефон"
+        address: "Адрес"
+        geo: "Геокоординаты"
+        website: "Сайт"
+        upload: "Логотип"
+        index: "Индекс"
+        user: "Аккаунт"
+        targets: "Объекты"
+        feedbacks: "Отзывы"
+        created_at: "Создано"
+        updated_at: "Изменено"
+        actions: "Объекты"
+    models:
+      customer: "Заказчик"
+
+  active_admin:
+    customers: "Заказчики"

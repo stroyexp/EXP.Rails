@@ -1,0 +1,23 @@
+@import "mdl/color-definitions";
+
+/* MDL */
+
+// Images
+
+$checkbox-image-path: 'mdl';
+$progress-image-path: 'mdl';
+
+// Colors
+
+$color-primary: $palette-blue-grey-500;
+$color-primary-dark: $palette-blue-grey-700;
+$color-accent: $palette-pink-A200;
+
+// Layout
+
+$layout-drawer-narrow: 272px !default;
+
+// Footer
+
+$footer-bg-color:          unquote("rgb(#{$palette-blue-grey-800})");
+$footer-button-fill-color: $footer-bg-color;

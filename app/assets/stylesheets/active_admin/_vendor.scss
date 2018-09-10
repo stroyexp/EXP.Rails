@@ -1,0 +1,32 @@
+#main_content {
+  .h-js--autosize {
+    max-height: 10rem;
+    resize: none;
+
+    &--min {
+      max-height: 3rem;
+    }
+
+    &--max {
+      max-height: 20rem;
+    }
+
+    &--full {
+      max-height: none;
+    }
+  }
+
+  .redactor-box {
+    display: inline-block;
+    margin-bottom: 0;
+    width: calc(80% - 2px) !important;
+  }
+
+  .redactor-toolbar {
+    background-color: #fcfcfc;
+  }
+
+  .redactor-modal-btn {
+    border-radius: 0;
+  }
+}

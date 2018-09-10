@@ -1,0 +1,32 @@
+ru:
+  activerecord:
+    attributes:
+      user:
+        email: "Электронный адрес"
+        password: "Пароль"
+        encrypted_password: "Хэш пароля"
+        sign_in_count: "Посещений"
+        current_sign_in_at: "Сеанс"
+        last_sign_in_at: "Предыдущий сеанс"
+        current_sign_in_ip: "IP"
+        last_sign_in_ip: "Предыдущий IP"
+        created_at: "Создано"
+        updated_at: "Изменено"
+
+        is_admin: "Администратор"
+        in_staff: "Персонал"
+        name: "Наименование"
+        email: "Электронный адрес"
+        phone: "Телефон"
+        address: "Почтовый адрес"
+        customers: "Заказчики"
+        agents: "Агенты"
+    models:
+      user: "Аккаунт"
+
+  active_admin:
+    users: "Аккаунты"
+    scopes:
+      admin: "Администраторы"
+      staff: "Персонал"
+      client: "Клиенты"

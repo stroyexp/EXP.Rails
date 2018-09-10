@@ -1,0 +1,9 @@
+@import "base";
+@import "attention_seekers/pulse";
+@import "bouncing_entrances/bounceIn";
+@import "fading_entrances/fadeIn";
+@import "zooming_entrances/zoomIn";
+
+.js .wow {
+  visibility: hidden;
+}

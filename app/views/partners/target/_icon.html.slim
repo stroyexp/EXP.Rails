@@ -1,0 +1,11 @@
+.mdl-list__item
+  a.mdl-list__item-primary-content>[href=object_path(item)]
+    .c-img--thumbnail
+      .c-banner
+        canvas.c-banner__frame.h-bg--cover[
+          width=96
+          height=96
+          data-lazy=(item.cover.nil? ? image_url('no-image.png') : item.cover.thumb.url)
+          ]
+    = item.name
+  span.material-icons.mdl-color-text--accent = ['star_border', 'star_half', 'star'][item.important]

@@ -1,0 +1,34 @@
+ru:
+  activerecord:
+    attributes:
+      activity:
+        published: "Опубликовано"
+        navigated: "Навигация"
+        header: "Заголовок"
+        label: "Меню"
+        content: "Содержимое"
+        parent: "Предок"
+        parent_id: "Предок"
+        child: "Потомок"
+        children: "Потомки"
+        ancestry_depth: "Уровень"
+        index: "Индекс"
+        areas: "Области деятельности"
+        images: "Изображения"
+        created_at: "Создано"
+        updated_at: "Изменено"
+    models:
+      activity: "Деятельность"
+
+  active_admin:
+    activities: "Деятельность"
+    scopes:
+      navigated: "В навигации"
+      denavigated: "Вне навигации"
+    batch_actions:
+      labels:
+        navigated: "В навигацию"
+        denavigated: "Убрать из навигации"
+      alerts:
+        navigated: "Модели помещены в навигацию."
+        denavigated: "Модели изъяты из навигации."

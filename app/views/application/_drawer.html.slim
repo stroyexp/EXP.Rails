@@ -1,0 +1,40 @@
+- cache request.path do
+  .mdl-layout__drawer
+    - if request.path == root_path
+      .mdl-layout-title.h-bg--only НИЦ Строительная экспертиза
+    - else
+      a.mdl-layout-title.h-bg--only[href=root_path] НИЦ Строительная экспертиза
+
+    nav.mdl-navigation.c-navigation--stacked
+      = render 'activities/activities'
+
+      .c-navigation__separator
+
+      a.mdl-navigation__link[
+        class=link_status(permits_path)
+        href=permits_path
+        ] = t 'permit.index.label'
+      a.mdl-navigation__link[
+        class=link_status(objects_path)
+        href=objects_path
+        ] = t 'target.index.label'
+      a.mdl-navigation__link[
+        class=link_status(partners_path)
+        href=partners_path
+        ] = t 'customer.index.label'
+      a.mdl-navigation__link[
+        class=link_status(feedbacks_path)
+        href=feedbacks_path
+        ] = t 'feedback.index.label'
+      a.mdl-navigation__link[
+        class=link_status(articles_path)
+        href=articles_path
+        ] = t 'article.index.label'
+      a.mdl-navigation__link[
+        class=link_status(publishes_path)
+        href=publishes_path
+        ] = t 'publish.index.label'
+      a.mdl-navigation__link[
+        class=link_status(contact_path)
+        href=contact_path
+      ] Контакты

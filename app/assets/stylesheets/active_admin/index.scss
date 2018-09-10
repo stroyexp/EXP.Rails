@@ -1,0 +1,83 @@
+$sidebar-width: 320px;
+
+@import "active_admin/mixins";
+@import "active_admin/base";
+
+@import "imperavi/index";
+
+@import "proj/mdl/variables";
+@import "proj/mdl/mixins";
+@import "proj/mdl/forms";
+@import "proj/mdl/_helpers";
+@import "proj/mdl/images";
+
+@import "utility";
+@import "show";
+@import "form";
+@import "vendor";
+
+html {
+  overflow-y: scroll;
+}
+
+.c-control-select--full {
+  overflow-y: visible !important;
+}
+
+.status_tag {
+  background: #6090DB;
+}
+
+form input[readonly] {
+  //padding-left: 0;
+  //font-size: 13px;
+  background-color: transparent;
+  //border: none;
+  //box-shadow: none;
+}
+
+#active_admin_content {
+  #main_content_wrapper {
+    #main_content {
+      margin-right: ($sidebar-width + 30px);
+    }
+  }
+}
+
+#utils {
+  padding-left: 1rem;
+  line-height: 100%;
+  > a {
+    font-size: 125%;
+    line-height: inherit;
+  }
+}
+
+#main_content {
+  #collection_selection_toggle_explaination {
+    vertical-align: top;
+    color: #333;
+    font-size: 11px;
+    font-style: normal;
+  }
+
+  .index_as_sortable {
+    h3.cell {
+      font-size: 14px;
+      line-height: 1;
+
+      small {
+        display: block;
+        margin-top: 4px;
+        font-size: 12px;
+        color: #aaa;
+        text-transform: lowercase;
+
+        em {
+          color: #e99;
+          font-style: normal;
+        }
+      }
+    }
+  }
+}

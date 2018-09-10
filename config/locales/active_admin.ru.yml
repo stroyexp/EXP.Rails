@@ -1,0 +1,43 @@
+ru:
+  activerecord:
+    models:
+      comment: "Комментарий"
+
+  formtastic:
+    :yes: 'Да'
+    :no: 'Нет'
+    :create: 'Создать %{model}'
+    :update: 'Изменить %{model}'
+    :submit: 'Выполнить %{model}'
+    :cancel: 'Отменить %{model}'
+    :reset: 'Сбросить %{model}'
+    :required: 'требуется'
+
+  active_admin:
+    utils: "Утилиты"
+    all: "Все"
+    comments:
+      created_at: "Создано"
+    scopes:
+      all: "Все"
+      active: "Активно"
+      passive: "Пассивно"
+      published: "Опубликовано"
+      unpublished: "Не опубликовано"
+    filters:
+      predicates:
+        eq: "равно"
+    batch_actions:
+      labels:
+        active: "Активировать"
+        deactive: "Деактивировать"
+        published: "Опубликовать"
+        unpublished: "Снять с публикации"
+      alerts:
+        active: "Модели активированы."
+        deactive: "Модели деактивированы."
+        published: "Модели опубликованы."
+        unpublished: "Модели сняты с публикации."
+    index_list:
+      table_alter: "Детали"
+      sortable: "Структура"

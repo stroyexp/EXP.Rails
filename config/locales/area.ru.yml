@@ -1,0 +1,25 @@
+ru:
+  activerecord:
+    attributes:
+      area:
+        active: "Активно"
+        name: "Название"
+        index: "Индекс"
+        activities: "Контент"
+        actions: "Объекты"
+        created_at: "Создано"
+        updated_at: "Изменено"
+    models:
+      area: "Область деятельности"
+
+  active_admin:
+    areas: "Области"
+    scopes:
+      active: "Активно"
+    batch_actions:
+      labels:
+        active: "Активировать"
+        deactive: "Деактивировать"
+      alerts:
+        active: "Модели активированы."
+        deactive: "Модели деактивированы."

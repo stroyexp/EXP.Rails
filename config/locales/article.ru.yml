@@ -1,0 +1,25 @@
+ru:
+  article:
+    index:
+      label: "Блог"
+      title: "Блог"
+      description: "Блог АО Научно-исследовательский центр «Строительная экспертиза»"
+      header: "Блог <small>АО НИЦ «Строительная экспертиза»</small>"
+
+  activerecord:
+    attributes:
+      article:
+        published: "Опубликовано"
+        published_at: "Дата публикации"
+        upload: "Баннер"
+        upload_crop: "Кадрировать"
+        header: "Заголовок"
+        annotation: "Аннотация"
+        content: "Содержимое"
+        created_at: "Создано"
+        updated_at: "Изменено"
+    models:
+      article: "Статья"
+
+  active_admin:
+    articles: "Статьи"

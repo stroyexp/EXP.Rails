@@ -1,0 +1,38 @@
+#main_content {
+  th {
+    &.col-updated_at,
+    &.col-created_at {
+      width: 7rem;
+    }
+
+    &.h-size--actions-short {
+      width: 4rem;
+    }
+
+    &.col-selectable {
+      width: 1rem;
+    }
+
+    &.col-id {
+      width: 2.5rem;
+    }
+
+    &.col-actions {
+      width: 9.5rem;
+      &--short {
+        width: 4rem;
+      }
+    }
+  }
+
+  td {
+    a {
+      &:hover {
+        .c-img--thumbnail {
+          border-color: $link-hover-color;
+        }
+      }
+    }
+  }
+}
+

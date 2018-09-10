@@ -1,0 +1,64 @@
+form fieldset > ol > li.boolean label {
+  font-weight: bold;
+  input {
+    margin: 0 .2em 0 0;
+  }
+}
+
+form {
+  input[type="datetime-local"] {
+    padding: 4px 10px 5px;
+    outline: none;
+    font-size: 13px;
+    border: 1px solid #c9d0d6;
+    border-radius: 3px;
+  }
+
+  input[type=date] {
+    display: inline-block;
+    padding: 4px 10px 5px;
+    width: auto;
+    font-family: monospace;
+    font-size: 13px;
+  }
+}
+
+.has-upload_icon.has_many_fields {
+  padding-left: 200px;
+
+  ol {
+    padding-top: 4px;
+  }
+
+  .handle {
+    display: none;
+    top: 16px;
+    left: 16px;
+    right: auto;
+    width: 96px;
+    height: 96px;
+
+    img {
+      position: relative;
+      z-index: 1;
+      box-shadow: rgba(0, 0, 0, 0.5) 0 0 10px;
+
+      &:hover,
+      &:focus {
+        box-shadow: rgba(0, 0, 0, 0.7) 0 2px 12px;
+
+        + small {
+          color: $color-black;
+        }
+      }
+    }
+
+    small {
+      display: block;
+      margin-top: ($spacer-y / 2);
+      color: $palette-grey-500;
+      font-size: 90%;
+      text-shadow: 0 0 1px $color-white;
+    }
+  }
+}

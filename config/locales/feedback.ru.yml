@@ -1,0 +1,25 @@
+ru:
+  feedback:
+    index:
+      label: "Отзывы"
+      title: "Отзывы"
+      description: "Отзывы АО Научно-исследовательский центр «Строительная экспертиза»"
+      header: "Отзывы <small>АО НИЦ «Строительная экспертиза»</small>"
+
+  activerecord:
+    attributes:
+      feedback:
+        published: "Опубликовано"
+        published_at: "Дата публикации"
+        upload: "Скан"
+        header: "Заголовок"
+        content: "Содержимое"
+        source: "Источник"
+        customer: "Заказчик"
+        created_at: "Создано"
+        updated_at: "Изменено"
+    models:
+      feedback: "Отзыв"
+
+  active_admin:
+    feedbacks: "Отзывы"

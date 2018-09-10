@@ -1,0 +1,140 @@
+.h-font--small {
+  font-size: 80%;
+}
+
+.h-font--italic {
+  font-style: italic;
+}
+
+.h-text--href {
+  @include text-href();
+}
+
+.h-text--animate {
+  transition: color 0.2s $animation-curve-default;
+}
+
+// Background
+
+.h-bg--only {
+  display: inline-block;
+  overflow: hidden;
+  text-align: left;
+  text-indent: -9999em;
+  direction: ltr;
+  background-repeat: no-repeat;
+
+  br {
+    display: none;
+  }
+}
+
+.h-bg--cover {
+  background: center no-repeat transparent;
+  background-size: cover;
+}
+
+// Display
+
+.h-display--flex {
+  display: flex !important;
+}
+
+.h-display--block {
+  display: block !important;
+}
+
+.h-display--inline-block {
+  display: inline-block !important;
+}
+
+.h-display--inline {
+  display: inline !important;
+}
+
+// Floats
+
+.h-pull--left {
+  float: left;
+}
+
+.h-pull--right {
+  float: right;
+}
+
+.h-clear {
+  clear: both;
+}
+
+.h-clear--left {
+  clear: left;
+}
+
+.h-clear--right {
+  clear: right;
+}
+
+// Sizes
+
+.h-width--100 {
+  width: 100% !important;
+}
+
+.h-margin-x--auto {
+  margin-right: auto !important;
+  margin-left: auto !important;
+}
+
+@each $prop, $abbr in (margin: margin, padding: padding) {
+  @each $size, $lengths in $spacers {
+    $length-x: map-get($lengths, x);
+    $length-y: map-get($lengths, y);
+
+    .h-#{$abbr}-all--#{$size} {
+      #{$prop}: $length-y $length-x !important;
+    }
+    .h-#{$abbr}-top--#{$size} {
+      #{$prop}-top: $length-y !important;
+    }
+    .h-#{$abbr}-right--#{$size} {
+      #{$prop}-right: $length-x !important;
+    }
+    .h-#{$abbr}-bottom--#{$size} {
+      #{$prop}-bottom: $length-y !important;
+    }
+    .h-#{$abbr}-left--#{$size} {
+      #{$prop}-left: $length-x !important;
+    }
+
+    // Axes
+    .h-#{$abbr}-x--#{$size} {
+      #{$prop}-right: $length-x !important;
+      #{$prop}-left: $length-x !important;
+    }
+    .h-#{$abbr}-y--#{$size} {
+      #{$prop}-top: $length-y !important;
+      #{$prop}-bottom: $length-y !important;
+    }
+  }
+}
+
+// Javascript
+
+.h-js--shadowed {
+  @include shadow-2dp();
+}
+
+.mdl-js {
+  &.h-js--onclick,
+  &[data-lightbox] {
+    cursor: pointer;
+  }
+
+  .h-js--shadowed {
+    @include shadow-4dp();
+
+    &:hover {
+      @include shadow-8dp();
+    }
+  }
+}

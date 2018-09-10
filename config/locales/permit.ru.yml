@@ -1,0 +1,27 @@
+ru:
+  permit:
+    index:
+      label: "Допуски"
+      title: "Допуски"
+      description: "Допуски АО Научно-исследовательский центр «Строительная экспертиза»"
+      header: "Допуски <small>АО НИЦ «Строительная экспертиза»</small>"
+
+  activerecord:
+    attributes:
+      permit:
+        published: "Опубликовано"
+        name: "Наименование"
+        number: "Номер"
+        provider: "Кем выдано"
+        issue_at: "Выдано"
+        onset_at: "Начало"
+        ends_at: "Окончание"
+        index: "Индекс"
+        cover: "Обложка"
+        created_at: "Создано"
+        updated_at: "Изменено"
+    models:
+      permit: "Допуск"
+
+  active_admin:
+    permits: "Допуски"

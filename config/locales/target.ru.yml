@@ -1,0 +1,42 @@
+ru:
+  target:
+    index:
+      label: "Портфолио"
+      title: "Объекты"
+      description: "Объекты АО Научно-исследовательский центр «Строительная экспертиза»"
+      header: "Объекты <small>АО НИЦ «Строительная экспертиза»</small>"
+
+  activerecord:
+    attributes:
+      target:
+        published: "Опубликовано"
+        important: "Значимость"
+        start_at: "Начало"
+        finish_at: "Окончание"
+        name: "Название"
+        content: "Описание"
+        address: "Адрес"
+        geo: "Геокоординаты"
+        website: "Сайт"
+        index: "Индекс"
+        created_at: "Создано"
+        updated_at: "Изменено"
+        customer: "Заказчик"
+        cover: "Обложка"
+        areas: "Области деятельности"
+        images: "Изображения"
+    models:
+      target: "Объект"
+
+  active_admin:
+    targets: "Объекты"
+    scopes:
+      published: "Опубликовано"
+      important: "Значимые"
+    batch_actions:
+      labels:
+        published: "Опубликовать"
+        unpublished: "Снять с публикации"
+      alerts:
+        published: "Модели опубликованы."
+        unpublished: "Модели сняты с публикации."
