@@ -142,6 +142,8 @@
   = csrf_meta_tags
   /= action_cable_meta_tag
 
+  = js_events_script_tag
+
   link[
     rel='stylesheet'
     href='//fonts.googleapis.com/css?family=Roboto:300,400,500,700&subset=cyrillic'
@@ -154,8 +156,6 @@
     ]
 
   = stylesheet_link_tag 'application', 'data-turbolinks-track' => 'reload'
-
-  = touchevents_script_tag
 
   /script[
     src='//code.getmdl.io/1.1.3/material.min.js'
